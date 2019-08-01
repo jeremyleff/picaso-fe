@@ -72,3 +72,27 @@ window.pepe = new Vue({
   }
 })
 
+
+$(function(){
+
+  
+  $("#searchBox").keypress(function(event){
+
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    var q = $("#searchBox").val();
+
+    if (keycode == '13') {
+
+      var path = "img/al.jpg";
+
+      $('<img src="'+ path +'">').load(function() {
+        $(this).appendTo($("#imgHolder"));
+      });
+
+      $.post("demo_ajax_gethint.asp", {"user_query": q}, function(result){
+        alert(result);
+      });
+    }
+  });
+});
+

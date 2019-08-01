@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
     <link rel="stylesheet" href="css/home.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="app">
@@ -61,7 +63,8 @@
         <div class="section">
             <h3>Prototype</h3>
             <div style="text-align: center">
-                <input type="text" placeholder="Enter an image search" />
+                <input id="searchBox" type="text" placeholder="Enter an image search" />
+                <div id="imgHolder"></div>
             </div> 
         </div>
     </full-page>
