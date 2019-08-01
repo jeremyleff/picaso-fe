@@ -17,8 +17,8 @@
         <li data-menuanchor="page2"><a href="#page2">Our Team</a></li>
         <li data-menuanchor="page3"><a href="#page3">Prototype</a></li>
     </ul>
-    <!-- <ul class="actions">
-        <li>
+    <ul class="actions">
+        <!-- <li>
             <a class="actions-button" href="#" rel="noopener" @click="addSection">Add section</a>
         </li>
         <li>
@@ -32,8 +32,14 @@
         </li>
         <li>
             <a class="actions-button" href="#" rel="noopener" @click="$refs.fullpage.api.moveSectionDown()">Move down</a>
+        </li> -->
+        <li>
+            <a class="actions-button" href="#" rel="noopener">Back End Source Code</a>
         </li>
-    </ul> -->
+        <li>
+            <a class="actions-button" href="https://github.com/jeremyleff/picaso-fe" rel="noopener" target="_new">Front End Source Code</a>
+        </li>
+    </ul>
 
     <full-page ref="fullpage" :options="options" id="fullpage" >
         <div class="section">
@@ -45,7 +51,7 @@
             <h3 style="margin-bottom: 50px">Our Team</h3>
             <div style="text-align: center; width:500px; margin: auto;">
                 <div style="text-align: left">
-                    <h4 class="teamMember"><img src="img/leff.jpg" class="profileImg"/>Al Carrasco</h4>
+                    <h4 class="teamMember"><img src="img/al.jpg" class="profileImg"/>Al Carrasco</h4>
                     <h4 class="teamMember"><img src="img/krantz.jpg" class="profileImg"/>Jacob Krantz</h4>
                     <h4 class="teamMember"><img src="img/leff.jpg" class="profileImg"/>Jeremy Leff</h4>
                     <h4 class="teamMember"><img src="img/morales.png" class="profileImg"/>Isaiah Morales</h4>
@@ -56,10 +62,7 @@
             <h3>Prototype</h3>
             <div style="text-align: center">
                 <input type="text" placeholder="Enter an image search" />
-            </div>
-            <div style="text-align: center"><a href="#">Back End Source Code</a> | <a href="https://github.com/jeremyleff/picaso-fe">Front End Source Code</a></div>
-
-            
+            </div> 
         </div>
     </full-page>
 </div>
