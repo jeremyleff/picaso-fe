@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hackathon Demo</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="twitter:site" content="@imac2">
+    <meta name="twitter:creator" content="@imac2">
+
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<div id="app">
+    <ul id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">About</a></li>
+        <li data-menuanchor="page2"><a href="#page2">Our Team</a></li>
+        <li data-menuanchor="page3"><a href="#page3">Prototype</a></li>
+    </ul>
+    <!-- <ul class="actions">
+        <li>
+            <a class="actions-button" href="#" rel="noopener" @click="addSection">Add section</a>
+        </li>
+        <li>
+            <a class="actions-button" href="#" rel="noopener" @click="removeSection">Remove section</a>
+        </li>
+        <li>
+            <a class="actions-button" href="#" rel="noopener" @click="toggleNavigation">Toggle nav</a>
+        </li>
+        <li>
+            <a class="actions-button" href="#" rel="noopener" @click="toggleScrollbar">Toggle scrollBar</a>
+        </li>
+        <li>
+            <a class="actions-button" href="#" rel="noopener" @click="$refs.fullpage.api.moveSectionDown()">Move down</a>
+        </li>
+    </ul> -->
+
+    <full-page ref="fullpage" :options="options" id="fullpage" >
+        <div class="section">
+            <div style="text-align: center">
+                <img src="img/logo.PNG" />
+            </div>
+        </div>
+        <div class="section">
+            <h3 style="margin-bottom: 50px">Our Team</h3>
+            <div style="text-align: center; width:500px; margin: auto;">
+                <div style="text-align: left">
+                    <h4 class="teamMember"><img src="img/leff.jpg" class="profileImg"/>Al Carrasco</h4>
+                    <h4 class="teamMember"><img src="img/leff.jpg" class="profileImg"/>Jacob Krantz</h4>
+                    <h4 class="teamMember"><img src="img/leff.jpg" class="profileImg"/>Jeremy Leff</h4>
+                    <h4 class="teamMember"><img src="img/morales.png" class="profileImg"/>Isaiah Morales</h4>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Prototype</h3>
+            <div style="text-align: center">
+                <input type="text" placeholder="Enter an image search" />
+            </div>
+            <div style="text-align: center"><a href="#">Source Code</a></div>
+        </div>
+    </full-page>
+</div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+<script src="js/vue-fullpage.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
